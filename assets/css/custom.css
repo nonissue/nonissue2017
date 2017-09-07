@@ -5,7 +5,8 @@ html {
 body {
 	font-family: 'Work Sans', 'Helvetica', 'Arial', sans-serif;
 	color: #fff;
-	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	font-size:16px;
+	background: radial-gradient(#a166ab, #1098ad, #07b39b, #6fba82);
 	background-size: 1000% 1000%;
 	display: flex;
 	padding: 3%;
@@ -15,6 +16,52 @@ body {
 }
 
 #container {}
+
+.main-content p{
+	font-size:1.5em;
+	line-height:1.4;
+	font-family:'Neuton', sans-serif;
+	font-weight:400;
+	color:	rgba(0,0,0,0.6);
+	mix-blend-mode:multiply;
+	max-width:400px;
+	margin-top:0;
+
+}
+
+.main-content h2 {
+	padding-left:0;
+	mix-blend-mode:soft-light;
+	font-size:3em;
+	font-family:'Montserrat', sans-serif;
+	font-weight:800;
+	color:#fff;
+	margin-bottom:1em;
+}
+.main-content h2 a {
+	color:#333;
+}
+.main-content h2 em {
+	padding-left:0.1em;
+	font-family:'Lora', sans-serif;
+	font-weight:400;
+	font-size:0.8em;
+}
+
+.main-content h3 {
+	mix-blend-mode:darken;
+font-size:1.1em;
+	line-height:1.4;
+	font-weight:600;
+	display:inline-block;
+	margin-right:1em;
+	border-bottom:3px solid rgba(0,0,0,.1);
+	margin-bottom:0.5em;
+	margin-top:3em;
+	text-transform:uppercase;
+	font-family:'Montserrat', sans-serif;
+	color:	rgba(10,10,10,.6);
+}
 
 #box {
 	mix-blend-mode: soft-light;
@@ -28,7 +75,7 @@ a {
 }
 
 a:hover {
-	color:#f37055;
+	color:#333;
 	/*    color:#111; */
 }
 
@@ -57,37 +104,7 @@ li a {
 	font-family: 'lora';
 }
 
-.titlez {
-	margin-bottom: 0.3em;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.10);
-	padding: 0.3em;
-	padding-left: 0.5em;
-	background-color: rgba(0, 0, 0, 0.5);
-}
 
-.titlez a {
-	text-transform: lowercase;
-	letter-spacing: -3px;
-	font-family: 'karla';
-	font-size: 2.5em;
-	color: #fff;
-	line-height: 0.9em;
-	font-weight: 700;
-}
-
-.title {
-	--borderWidth: 1px;
-	background: #263238;
-	position: relative;
-	color: #fff;
-	margin-bottom: 3px;
-	border-radius: var(--borderWidth);
-}
-
-.title a {
-	font-size: 2em;
-	color: #fff;
-}
 
 @keyframes animatedgradient {
 	0% {
