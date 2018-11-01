@@ -11,12 +11,12 @@ body {
 	color:	rgba(0,0,0,0.6);
 	font-size:16px;
 	background: radial-gradient(#037c8f, #f79ede, rgb(221, 145, 4), #56f590, #56b2e0);
-	background-size: 1200% 1200%;
+	background-size: 1000% 1000%;
 	display: flex;
 	padding: 10%;
 	align-items: center;
 	/* -webkit-font-smoothing: antialiased; */
-	animation: animatedgradient 30s ease infinite alternate;
+	/* animation: animatedgradient 60s ease infinite alternate; */
 }
 
 .container {
@@ -42,7 +42,7 @@ body {
 
 .main-content {
 	font-size:1.2em;
-	line-height:1.3;
+	line-height:1.5;
 	font-weight:400;
 	color: #083b55;
 	margin-top:0;
@@ -137,8 +137,7 @@ a:hover {
 
 ul {
 	list-style-type: none;
-	line-height: 1.5;
-	margin-top: 1em;
+	line-height: 1.6;
 	padding-left:0em;
 	font-weight:400;
 	color: #083b55;
@@ -146,53 +145,44 @@ ul {
 	margin-top:0;
 }
 
+.find-me ul {
+	/* line-height: 1.4; */
+}
+
 li {
 	margin: 0em;
 	padding-top: 0;
 	margin-left: 0;
 	padding-bottom: 0em;
-	display:block;
 }
 
 .blurb li:before {
-	/* content: '\f0e7'; */
-	font-family: 'FontAwesome';
-	float: left;
-	padding-top:0.3em;
-	color: #8affeb;
-	opacity: 0.9;
-	font-size:0.8rem;
-	/* margin-left: -0.2em; */
+
 }
 
 li a {
 	text-decoration: none;
 	color: #0883ca;
-	display:inline-block;
-	/* background: #e9ff85; */
 }
 
-
 li a:hover {
-	/* text-decoration: none; */
-	/* color: #0883ca; */
-	/* background: #e9ff85; */
+
+}
+
+.find-me {
+	/* mix-blend-mode: overlay; */
+	/* color: #fff; */
 }
 
 .find-me li a {
-	text-transform: uppercase;
 	text-decoration: none;
 	color: #083b55;
-	display:inline-block;
-	padding: 0.1em 0.6em 0.1em 0.6em;
-	/* background: #e9ff85; */
 	font-weight: 600;
-	padding: 0.2em 0.6em 0.2em 0.6em;
+	padding: 0em 0.6em 0.2em 0em;
 }
 
 .find-me a:hover {
-	/* background: #0883ca; */
-	/* color: #e9ff85; */
+	color:rgba(255,255,255,1);
 }
 
 .find-me li:hover {
@@ -203,12 +193,9 @@ li a:hover {
 	content: '\f0e7';
 	font-family: 'FontAwesome';
 	float: left;
-	/* color: #037c8f; */
-	/* color:  */
-	opacity:0.5;
-	font-size:0.7em;
-	/* padding:0.5em 0.8em 0.5em 0.2em; */
-	padding-top:0.3em;
+	opacity:0.7;
+	font-size:0.6em;
+	padding-top:0.6em;
 	padding-bottom:0.2em;
 	padding-right: 0.6em;
 	margin-left: 0em;
@@ -220,9 +207,6 @@ li a:hover {
 .find-me a:hover:before {
 	opacity: 1;
 	color:rgba(255,255,255,1);
-	/* color: #f79ede; */
-	/* color: #fff; */
-	/* background: #0883ca; */
 }
 
 @keyframes animatedgradient {
