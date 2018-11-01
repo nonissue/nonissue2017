@@ -1,50 +1,95 @@
+html, body {
+	overflow-x: hidden;
+}
+
 html {
 	height: 100%;
 }
 
 body {
-	font-family: 'Work Sans', 'Helvetica', 'Arial', sans-serif;
-	color: #fff;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	color:	rgba(0,0,0,0.6);
 	font-size:16px;
-	background: radial-gradient(#a166ab, #1098ad, #07b39b, #6fba82);
-	background-size: 1000% 1000%;
+	background: radial-gradient(#1098ad, #fbc2eb, #a6c1ee, #84fab0, #8fd3f4);
+
+	background-size: 1200% 1200%;
 	display: flex;
-	padding: 3%;
+	padding: 10%;
 	align-items: center;
 	-webkit-font-smoothing: antialiased;
-	animation: animatedgradient 15s ease infinite alternate;
+	animation: animatedgradient 20s ease infinite alternate;
 }
 
-#container {}
+.container {
+	
+}
 
-.main-content p{
-	font-size:1.5em;
-	line-height:1.4;
-	font-family:'Neuton', sans-serif;
+.main-content {
+	display:inline-flex;
+	width:100%;
+	flex-wrap:wrap;
+}
+
+.header {
+	width:100%;
+}
+
+.content-block {
+	width:300px;
+	margin-right:2em;
+	margin-bottom:1em;
+	margin-left:5px;
+/* 	height:15vw; */
+/* 		background: rgba(0,0,0,0.05); */
+	
+}
+
+.main-content {
+	font-size:1.2em;
+	line-height:1.3;
+	/* font-family:'Work Sans', sans-serif; */
 	font-weight:400;
 	color:	rgba(0,0,0,0.6);
 	mix-blend-mode:multiply;
-	max-width:500px;
 	margin-top:0;
+}
 
+.main-content p {
+	margin-top:0;
 }
 
 .main-content h2 {
 	padding-left:0;
-	mix-blend-mode:soft-light;
-	font-size:3em;
+	margin-top:0;
+	font-size:2.5rem;
 	font-family:'Montserrat', sans-serif;
 	font-weight:800;
-	color:#fff;
+	padding-top:0;
+	color:	rgba(0,0,0,0.6);
 	margin-bottom:1em;
 }
+
+.main-content h2:before {
+	content: '\f069';
+	font-family: 'FontAwesome';
+	float: left;
+	padding-top:0.45em;
+	color:	rgba(0,0,0,0.2);
+	font-size:0.6em;
+	margin-left: -1.3em;
+}
+
 .main-content h2 a {
-	color:#333;
+	mix-blend-mode:soft-light;
+	color:	rgba(0,0,0,0.6);
+	padding-top:0;
+	line-height:0.5em;
 }
 
 .main-content h2 em {
+	padding-top:0;
 	padding-left:0.1em;
-	font-family:'Lora', sans-serif;
+	font-family:'Work Sans', sans-serif;
 	font-weight:400;
 	font-size:0.8em;
 }
@@ -52,26 +97,27 @@ body {
 .main-content h3 {
 	mix-blend-mode:darken;
 	font-size:1.1em;
-	line-height:1.4;
+	line-height:1.3;
 	font-weight:600;
-	display:inline-block;
+	padding-right:1em;
 	margin-right:1em;
-/* 	border-bottom:3px solid rgba(0,0,0,.1); */
-	margin-bottom:0.5em;
-	margin-top:2em;
+	margin-bottom:0.2em;
+	margin-top:0.4em;
 	text-transform:uppercase;
 	font-family:'Montserrat', sans-serif;
-	color:	rgba(10,10,10,.6);
+	color:	rgba(10,10,10,.5);
 }
+
+.main-underline {
+
+}
+
 .fashrink {
-/* 	padding-top:0.3em; */
 	color:	rgba(0,0,0,0.3);
-	font-size:1.2rem;
+	font-size:1.3rem;
 	padding-left:0.7em;
 	padding-right:0.5rem;
-	line-height:1.4;
-/* 	margin-left:-1.5; */
-/* 	padding-bottom:0.3em; */
+	line-height:1.2;
 }
 
 #box {
@@ -87,71 +133,60 @@ a {
 
 a:hover {
 	color:#333;
-	/*    color:#111; */
 }
 
 ul {
-	/* display: none; */
 	list-style-type: none;
-	/* padding-left: 0; */
 	margin-top: 1em;
-	font-size:1.5em;
-	line-height:1.4;
-	font-family:'Neuton', sans-serif;
+	padding-left:1em;
 	font-weight:400;
 	color:	rgba(0,0,0,0.6);
-	/* mix-blend-mode:multiply; */
 	max-width:400px;
 	margin-top:0;
-	/* padding-left:0; */
-	/* display:inline; */
 }
 
 li {
 	margin: 0em;
-	/* display:inline; */
-	
-	/* padding: 0.5em; */
-	/* padding-left: 0.5em; */
 	padding-top: 0;
-	/* float: left; */
 	margin-left: 0;
 	padding-bottom: 0em;
-	/* line-height: 2em; */
 }
 
 li:before {
 	content: '\f0e7';
 	font-family: 'FontAwesome';
 	float: left;
-	padding-top:0.6em;
-	color:	rgba(0,0,0,0.3);
-	font-size:1rem;
+	padding-top:0.4em;
+	color:	rgba(0,0,0,0.2);
+	font-size:0.8rem;
 	margin-left: -1.5em;
+}
+
+li:hover:before {
+	color:	rgba(0,0,0,0.5);
 }
 
 li a {
 	text-decoration: none;
-	color:	rgba(0,0,0,0.6);
+	color:rgba(0,0,0,0.6);
 	text-decoration: underline;
-	/* color: #fff; */
-	/* font-size: 1.5em; */
-	/* font-family: 'lora'; */
 }
-
-
 
 @keyframes animatedgradient {
 	0% {
-		background-position: 50% 50%;
+		background-position: 0% 50%;
+	}
+	25 % {
+		background-position: 70% 50%;
 	}
 	50% {
-		background-position: 70% 70%;
-	}
-	75% {
 		background-position: 30% 30%;
 	}
+	75% {
+		background-position: 0% 70%;
+	}
 	100% {
-		background-position: 100% 0%;
+		background-position: 0% 100%;
 	}
 }
+
