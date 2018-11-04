@@ -194,15 +194,7 @@ body {
 }
 
 .icon {
-	/* display: block; */
-	/* width: 1em; */
-	/* height: 1em; */
-	/* margin: 0 auto; */
 	fill: currentColor;
-	/* vertical-align: middle; */
-	/* font-size:0.5em; */
-	/* font-size:32px; */
-	/* font-size:2rem; */
 }
 
 .action {
@@ -225,13 +217,17 @@ body {
 	position: absolute;
 	top: 2rem;
 	left: 2rem;
-	/* background:#ffffff10; */
 }
 
 .header-text, .icon {
-	/* line-height:1.25rem; */
-	/* line-height:16px; */
-	line-height:1.5rem;
+
+}
+
+.menubutton {
+	font-size:1.5rem;
+	font-weight:600;
+	font-family: 'Alegreya Sans', sans-serif;
+	display: block;
 }
 
 .menu--open .action--menu {
@@ -245,6 +241,7 @@ body {
 .header-text {
 	/* font-size:1.5em; */
 	font-family: 'Alegreya Sans', sans-serif;
+	display: block;
 	/* font-family: 'Arial'; */
 	/* font-size:32px; */
 	text-transform:uppercase;
