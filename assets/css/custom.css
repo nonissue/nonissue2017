@@ -225,18 +225,17 @@ body {
 
 .header {
 	position: fixed;
-	top: 0.5rem;
-	left: 0.5rem;
+	top: 2rem;
+	left: 2rem;
 	padding:0rem 0rem 0rem 0rem;
 	opacity:0.8;
 }
 
 .header-text a {
 	/* color: #D00000; */
-	/* color: #fff; */
-	color: #00D1FF;
-	font-weight:500;
-	text-transform: uppercase;
+	color: #fff;
+	/* color: #00D1FF; */
+	/* text-transform: uppercase; */
 }
 
 
@@ -258,11 +257,13 @@ body {
 }
 
 .header-text {
+	text-transform: uppercase;
 	font-family: 'Rubik', sans-serif;
+	/* font-family: 'Alegreya Sans SC', serif; */
 	display: block;
 	font-size: 32px;
 	font-weight:500;
-	letter-spacing: -0px;
+	/* letter-spacing: -1px; */
 }
 
 
@@ -274,9 +275,6 @@ body {
 .content-block {
 	margin-left:0.6rem;
 	margin-right:1rem;
-	font-weight:400;
-	font-family: 'Alegreya', serif;
-	/* line-height:1.6rem; */
 }
 
 .main-content {
@@ -304,82 +302,70 @@ a:hover {
 
 ul {
 	list-style-type: none;
-	padding-left:0em;
-	/* max-width:90vw; */
-	margin-top:0;
-}
-
-li {
-	margin: 0em;
-	padding-top: 0;
-	margin-left: 0;
-	padding-bottom: 0em;
-}
-
-li a {
-	/* text-decoration: none; */
-	/* color: #c158dc; */
+	padding:0em;
+	margin:0;
+	
 }
 
 .hero {
-	/* margin-top:1rem; */
-	max-width: 250px;
-	font-size: 22px;
-	font-weight:400;
+	max-width: 300px;
+	margin-left:2.15rem;
+	margin-top:5.4rem;
+	font-size: 16px;
+	font-weight:200;
 	font-style: italic;
 	line-height: 1.6;
-	/* font-style:italic; */
-	/* text-transform: uppercase; */
 	color:  #E8E8EA;
-	/* font-family: 'Alegreya', serif; */
-	/* font-family: 'Rubik'; */
-	/* font-family: 'IBM Plex Sans Condensed'; */
-	/* font-family: 'IBM Plex Sans'; */
-	font-family: 'Work Sans';
-	font-family: 'IBM Plex Mono';
-	/* line-height:1rem; */
-	/* letter-spacing: -0.01rem; */
+	font-family: 'Alegreya', serif;
 }
 
 nav {
-	display: block;
-	font-family: 'Rubik';
-	font-weight:500;
-	letter-spacing: -0.01rem;
-	margin-left: 0.6rem;
-	margin-top:3rem;
-	color: #ffffffa0;
-	font-size: 16px;
-	margin-right:0.5rem;
-	opacity:0.8;
-	margin-bottom:0.5rem;
-	max-width:400px;
-	line-height:1.4;
+	/* display: block; */
+	/* background: #eeeeee20; */
+	/* font-family: 'Rubik'; */
+	font-family: 'Alegreya Sans SC';
+	font-weight:400;
+	/* margin-left: 2.2rem; */
+	margin-top:1rem;
+	background: #eee;
+	/* color: #eeeeee20; */
+	font-size: 20px;
+	font-weight:400;
 }
 
 .find-me {
-
-	/* font-family: 'Work Sans'; */
-	/* font-family: 'Alegreya';	r */
-
-
+	width:100%;
 }
 
 .find-me ul {
 	margin-bottom:0;
+	/* display:flex; */
+	max-width:320px;
+	padding:0;
+	display: inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+	/* border:1px solid #fff; */
+	border-right:0;
 }
 
-.find-me li {
-	display: inline-block;
-	text-transform: uppercase;
+.find-me ul li {
+	padding:0.25rem 0.5rem 0.25rem 0.5rem;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	/* padding: 16px; */
+	margin:0;
+	margin-right:1px;
+	background: rgba(255,255,255,0.1);
+	margin-bottom:1px;
 }
 
-.find-me li a {
-	text-decoration: auto;
-	/* color: #ffffffa0; */
-}
+/* .find-me li + li {
+	border-left: 1px solid transparent;
+	border-top: 1px solid transparent;
+} */
 
 .under a {
+	/* border: 1px solid #eeeeee20; */
 	/* -webkit-text-decoration: rgba(255,255,255,0.5) solid underline;
 	text-decoration: rgba(255,255,255,0.5) solid underline;
 	-webkit-text-underline-position: auto;
@@ -387,12 +373,12 @@ nav {
 }
 
 .under a:hover {
-	text-decoration: none;
-	transition: all 10s ease-in-out;
+	/* text-decoration: none;
+	transition: all 10s ease-in-out; */
 }
 
 .find-me a:hover {
-	/* color:rgba(255,255,255,1); */
+	
 }
 
 /* .find-me li:hover {
@@ -401,41 +387,32 @@ nav {
 	color: #fff;
 } */
 
-.find-me li:hover a:before {
+/* .find-me li:hover a:before {
 	color: #fff;
 	transition: color 0.75s ease;
 }
 
 .find-me li:hover:before {
-	/* color: #ce93d8; */
+	color: #ce93d8;
 }
 
 .find-me a:before:hover {
 	color: #ce93d8;
-}
+} */
 
 .find-me a:hover {
-	color: #fff1ff;
-	color: #ce93d8;
-	color: #000a12;
-	color: #ce93d8;
-	transition: color 0.25s ease;
+	/* color: #fff1ff;
+	transition: color 0.5s ease, background-color 0.5s ease-out;
+	background: #ffffff20; */
 }
-
-.find-me li::after {
-	content: '   /  ';
-	padding-left:0.1rem;
-	padding-right:0.1rem;
-	opacity: 0.9;
-}
-
+/* 
 .find-me li:last-child::after {
-	content: '';
-}
+ content: ''; 
+}*/
 
-.find-me a:hover:before {
+/* .find-me a:hover:before {
 	color:rgba(255,255,255,1);
-}
+} */
 
 @keyframes animatedgradient {
 	0% {
