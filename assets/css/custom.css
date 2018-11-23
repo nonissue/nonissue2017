@@ -206,6 +206,8 @@ body {
 	font-size:16px;
 	background:#22031f;
 	margin-top:10vh;
+	margin-left:10vw;
+	/* margin-left:%; */
 }
 
 .hidden {
@@ -257,6 +259,7 @@ body {
 	font-size: 24px;
 	font-weight:900;
 	padding:1.5rem;
+	padding-left:0;
 	padding-bottom:0;
 }
 
@@ -283,6 +286,7 @@ body {
 	width: 100%;
 }
 
+/* from : https://codepen.io/jbprice/pen/PweOYJ */
 a {
 	text-decoration: none;
 	color: #009FB7;
@@ -326,7 +330,7 @@ ul {
 
 .hero {
 	max-width: 300px;
-	margin-left:1.5rem;
+	/* margin-left:1.5rem; */
 	font-size: 20px;
 	font-weight:200;
 	font-style: italic;
