@@ -324,7 +324,7 @@ li a {
 .hero {
 	/* margin-top:1rem; */
 	max-width: 250px;
-	font-size: 8px;
+	font-size: 22px;
 	font-weight:400;
 	font-style: italic;
 	line-height: 1.6;
@@ -349,7 +349,7 @@ nav {
 	margin-left: 0.6rem;
 	margin-top:2rem;
 	color: #ffffffa0;
-	font-size: 8px;
+	font-size: 16px;
 	margin-right:0.5rem;
 	opacity:0.8;
 	margin-bottom:0.5rem;
